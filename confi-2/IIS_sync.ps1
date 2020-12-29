@@ -1,7 +1,5 @@
 
-$out_paths = "./confi-2"
-
-cd $out_paths
+echo " => Hi from Jenk!"
 
 $out = (git status) | Out-String
 
