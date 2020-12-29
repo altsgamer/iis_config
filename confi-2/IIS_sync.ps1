@@ -12,7 +12,7 @@ git config user.email "Jankins@mail.ru"
 git config user.name "Jan Kins"
 
 $out = (git status) | Out-String
-echo "GITI = $out"
+Write-Output "GITI = $out"
 
 #if ( $out.Contains("nothing to commit") ) {
 #    echo " => Config has not changed!"
