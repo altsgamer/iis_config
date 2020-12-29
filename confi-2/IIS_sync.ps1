@@ -3,7 +3,7 @@ $in_paths = @("/home/xt1/*","/home/xt2/*")
 $out_paths = "./"
 
 git config user.email "im4adm@gmail.com"
-git config user.name "AltsGamer"
+git config user.name "altsgamer"
 git checkout master
 
 foreach ($p in $in_paths) {
