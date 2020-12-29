@@ -7,13 +7,15 @@ foreach ($p in $in_paths) {
 }
 
 $out = (git status) | Out-String
-
-if ( $out.Contains("nothing to commit") ) {
-    echo " => Config has not changed!"
-}
-else {
-    git add .
-    git commit -m "Config update"
-    git push -u origin master
-    echo " => Config in Repo was updated!"
-}
+echo "GITI = $out"
+#
+#if ( $out.Contains("nothing to commit") ) {
+#    echo " => Config has not changed!"
+#}
+#else {
+#    git add .
+#    git commit -m "Config update"
+#    git push -u origin master
+#    echo " => Config in Repo was updated!"
+#}
+#
