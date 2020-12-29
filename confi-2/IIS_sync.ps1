@@ -8,7 +8,7 @@ foreach ($p in $in_paths) {
 
 $out = (git status) | Out-String
 echo "GITI = $out"
-#
+
 #if ( $out.Contains("nothing to commit") ) {
 #    echo " => Config has not changed!"
 #}
@@ -18,4 +18,3 @@ echo "GITI = $out"
 #    git push -u origin master
 #    echo " => Config in Repo was updated!"
 #}
-#
