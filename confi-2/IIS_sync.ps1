@@ -6,6 +6,9 @@ foreach ($p in $in_paths) {
     Copy-Item -Path $p -Destination $out_paths  -Recurse -Force
 }
 
+git config user.email "Jankins@mail.ru"
+git config user.name "Jan Kins"
+
 $out = (git status) | Out-String
 echo "GITI = $out"
 
