@@ -19,6 +19,6 @@ if ( $out.Contains("nothing to commit") ) {
 else {
     git add .
     git commit -m "Config update with Jankins Job"
-#    git push
+    git push
     echo " => Config in Repo was updated!"
 }
